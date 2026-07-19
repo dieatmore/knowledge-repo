@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'Knowledge Repository',
   description: '面向全栈工程师的知识体系',
+  base: '/knowledge-repo/',
   srcDir: '.',
   outDir: '.vitepress/dist',
   cleanUrls: true,
