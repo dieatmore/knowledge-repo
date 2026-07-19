@@ -13,7 +13,7 @@ summary: "梳理 iframe 的核心属性、父子窗口通信（postMessage）、
 
 ## 一、iframe 基础
 
-​<iframe>​​ 标签是 HTML5 中的一部分，用于嵌入另一个 HTML 页面到当前页面中
+​`<iframe>` 标签是 HTML5 中的一部分，用于嵌入另一个 HTML 页面到当前页面中
 
 ### 1. 核心属性
 

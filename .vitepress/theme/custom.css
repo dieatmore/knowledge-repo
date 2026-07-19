@@ -1,0 +1,22 @@
+/* 首页 Hero 区域 — 防止中文标题折行 */
+.VPHomeHero .container {
+  max-width: 800px !important;
+}
+
+.VPHomeHero .main .name {
+  max-width: 100% !important;
+  font-size: 52px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap;
+}
+
+.VPHomeHero .main .text {
+  max-width: 100% !important;
+  font-size: 24px !important;
+  white-space: nowrap;
+}
+
+.VPHomeHero .main .tagline {
+  max-width: 100% !important;
+  font-size: 18px !important;
+}

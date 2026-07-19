@@ -2,7 +2,20 @@
 
 ## 📝 概述
 
-面向全栈工程师的知识体系，覆盖前端、后端、AI、计算机基础、工程实践与开发工具。
+面向全栈工程师的知识体系，覆盖前端、后端、计算机基础、工程实践与开发工具等。
+
+🌐 **在线站点**：[dieatmore.github.io/knowledge-repo](https://dieatmore.github.io/knowledge-repo/) — 基于 VitePress 构建，支持全文搜索。
+
+## 🚀 本地运行
+
+```bash
+npm install            # 安装依赖
+npm run docs:dev       # 启动开发服务器 → http://localhost:5173
+npm run docs:build     # 构建静态站点
+npm run docs:preview   # 预览构建结果
+```
+
+推送 `main` 分支后，GitHub Actions 自动部署到 GitHub Pages。
 
 
 ---
@@ -12,63 +25,39 @@
 ```
 knowledge-repo/
 │
-├── ai/                                   🤖 人工智能
-│   ├── deep-learning/                    深度学习：CNN / RNN / Transformer / 训练技巧
-│   ├── llm/                              大语言模型：RAG / Agent / Fine-tune / 推理优化
-│   ├── ml-basics/                        经典机器学习：回归 / 分类 / 聚类 / 特征工程
-│   ├── mlops/                            模型部署 / 向量数据库 / ML 流水线
-│   └── prompt-engineering/               提示词工程：Prompt 设计 / CoT / 结构化输出
+├── asset/                                🖼️ 静态资源：架构图 / 流程图 / 示意图
 │
 ├── backend/                              ⚙️ 后端
-│   ├── api-design/                       RESTful / GraphQL / gRPC / WebSocket
-│   ├── auth/                             JWT / OAuth 2.0 / SSO 单点登录 / RBAC 权限模型
-│   ├── database/                         🗄️ 数据存储
-│   │   ├── nosql/                        Redis 缓存策略 / MongoDB / Elasticsearch
-│   │   └── sql/                          MySQL / PostgreSQL：索引 / 事务 / 锁 / SQL 优化
-│   ├── languages/                        🗣️ 语言 & 框架
-│   │   ├── go/                           Go / Gin / goroutine & channel 并发模型
-│   │   ├── nodejs/                       Node.js / Express / Nest.js / Koa
-│   │   └── python/                       Python / Django / FastAPI / Flask / asyncio
-│   └── message-queue/                    RabbitMQ / Kafka / 异步解耦 / 事件驱动
+│   └── database/                         🗄️ 数据存储
+│       └── sql/                          MySQL / PostgreSQL：索引 / 事务 / 锁 / SQL 优化
 │
 ├── cs/                                   📖 计算机基础
 │   ├── algorithms/                       算法：排序 / 搜索 / 动态规划 / 贪心 / 回溯
-│   ├── computer-organization/            组成原理：CPU / 内存层次 / 指令集 / 存储
 │   ├── data-structures/                  数据结构：数组 / 链表 / 树 / 图 / 哈希表 / 堆
 │   ├── network/                          计算机网络：TCP/IP / HTTP/HTTPS / DNS / 抓包
 │   └── os/                               操作系统：进程线程 / 内存管理 / 文件系统 / IO 多路复用
 │
 ├── engineering/                          🛠️ 软件工程（跨语言跨端的通用实践）
-│   ├── design-patterns/                  设计模式 / SOLID 原则 / 常用模式实战
-│   ├── devops/                           Docker / K8s / CI&CD / GitHub Actions
-│   ├── observability/                    日志 / 监控（Prometheus）/ 链路追踪
-│   ├── security/                         Web 安全：XSS / CSRF / SQL 注入 / HTTPS&TLS
-│   ├── system-design/                    系统设计：微服务 / 高可用 / 高并发 / CAP&BASE
-│   └── testing/                          单元测试 / 集成测试 / E2E / 压力测试
+│   └── security/                         Web 安全：XSS / CSRF / SQL 注入 / HTTPS&TLS
 │
 ├── frontend/                             🖥️ 前端
 │   ├── browser/                          浏览器原理：渲染流程 / Event Loop / 缓存 / 跨域 / 安全
-│   ├── build-tools/                      webpack / Vite / Rollup / Babel / esbuild
-│   ├── engineering/                      前端工程化：ESLint / 监控 / 测试 / 微前端
 │   ├── frameworks/                       🧩 前端框架
-│   │   ├── react/                        React / Hooks / 状态管理 / Next.js / 生态
 │   │   └── vue/                          Vue / Composition API / Pinia / Nuxt / 生态
 │   ├── html-css/                         HTML5 / CSS3 / Flex&Grid 布局 / 响应式 / 动画
 │   └── javascript/                       ES6+ / 异步编程 / 模块化 / TypeScript
 │
 ├── real-world/                           🌍 实战记录
-│   ├── case-studies/                     项目复盘：从 0 到 1 / 架构演进 / 技术选型
 │   └── real-business/                    真实业务：业务逻辑 / 边界 case / 踩坑记录
+│       ├── didi/                         滴滴相关业务
+│       └── nefu-data-center/             林科楼数据中心
 │
-├── share/                                 🔗 好文分享
-│   └── link.md                            优质技术文章 / 博客链接收藏
+├── share/                                🔗 好文分享
 │
 ├── templates/                            📝 笔记模板
 │
 ├── tools/                                🔨 开发工具
-│   ├── editor/                           编辑器：Vim / Neovim / VS Code 配置
-│   ├── git/                              Git：常用命令 / 分支策略 / rebase vs merge
-│   └── linux/                            Linux：Shell 脚本 / 常用命令 / 权限管理
+│   └── git/                              Git：常用命令 / 分支策略 / rebase vs merge
 │
 └── README.md
 ```
@@ -100,12 +89,12 @@ summary: "一句话摘要"
 | `summary` | 简洁摘要 |
 
 ---
+## 技术栈
 
-## 迁移兼容性
+本站基于 **VitePress** 构建，GitHub Actions 自动部署至 GitHub Pages。
 
 YAML frontmatter + 标准 Markdown 链接，可无缝迁移至：
 
-- **VitePress** — 推荐，轻量快速
 - **Docusaurus** — 功能全面
 - **Obsidian** — 本地笔记
 - **Hugo** — 静态站点
@@ -113,6 +102,12 @@ YAML frontmatter + 标准 Markdown 链接，可无缝迁移至：
 ---
 
 ## ✅ update
+
+**2026-07-19**
+
+- 搭建 VitePress 静态站点：自动侧边栏、本地搜索、首页导航
+- 配置 GitHub Actions 自动部署至 GitHub Pages
+- 清理空目录：删除 26 个仅有 `.gitkeep` 的空目录，精简仓库结构
 
 **2026-07-17**
 
