@@ -10,7 +10,7 @@
 
 ```bash
 npm install            # 安装依赖
-npm run docs:dev       # 启动开发服务器 → http://localhost:5173
+npm run docs:dev       # 启动开发服务器
 npm run docs:build     # 构建静态站点
 npm run docs:preview   # 预览构建结果
 ```
